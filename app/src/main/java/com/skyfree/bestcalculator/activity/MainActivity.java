@@ -1,4 +1,4 @@
-package com.skyfree.bestcalculator;
+package com.skyfree.bestcalculator.activity;
 
 import android.content.Context;
 import android.content.SharedPreferences;
@@ -6,13 +6,22 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Html;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 
-import net.objecthunter.exp4j.Expression;
-import net.objecthunter.exp4j.ExpressionBuilder;
+import com.skyfree.bestcalculator.adapter.AdapterFunction;
+import com.skyfree.bestcalculator.docalculate.Calculator;
+import com.skyfree.bestcalculator.docalculate.Helpers;
+import com.skyfree.bestcalculator.R;
+import com.skyfree.bestcalculator.model.FunctionSetting;
 
-public class MainActivity extends AppCompatActivity implements View.OnClickListener {
+import java.util.ArrayList;
+
+public class MainActivity extends AppCompatActivity implements View.OnClickListener, AdapterView.OnItemClickListener {
+
+    private ListView mLvFunction;
     private TextView outputResult;
     private TextView shiftDisplay;
     private TextView degreeRad;
@@ -34,14 +43,31 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             buttonRnd;
     private Button buttonShift, buttonRad, buttonAbs, buttonMr, buttonMs, buttonMPlus;
 
+    private AdapterFunction mAdapter;
+    private ArrayList<FunctionSetting> mListFunction;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initView();
+        addInfoFunction();
+    }
+
+    private void addInfoFunction(){
+        mListFunction = new ArrayList<>();
+        mListFunction.add(new FunctionSetting(R.drawable.ic_theme, "Theme"));
+        mListFunction.add(new FunctionSetting(R.drawable.ic_convert, "Convert"));
+        mListFunction.add(new FunctionSetting(R.drawable.ic_invite, "Invite"));
+        mListFunction.add(new FunctionSetting(R.drawable.ic_about, "About us"));
+        mListFunction.add(new FunctionSetting(R.drawable.ic_rate, "Rate us"));
+        mAdapter = new AdapterFunction(this, mListFunction);
+        mLvFunction.setAdapter(mAdapter);
     }
 
     private void initView(){
+        mLvFunction = (ListView) findViewById(R.id.lvFunction);
+        mLvFunction.setOnItemClickListener(this);
         mCalculator = new Calculator();
         outputResult = (TextView)findViewById(R.id.display);
         outputResult.setText("");
@@ -412,7 +438,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             currentDisplayedInput = "";
             inputToBeParsed = "";
         }
-        else if(data.equals("del")){
+        else if(data.equals("Del")){
             String enteredInput = outputResult.getText().toString();
             if(enteredInput.length() > 0){
                 enteredInput = enteredInput.substring(0, enteredInput.length() - 1);
@@ -421,23 +447,20 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 outputResult.setText(currentDisplayedInput);
             }
         }else if(data.equals("=")){
+//            String enteredInput = outputResult.getText().toString();
+//            Expression expression = new ExpressionBuilder(enteredInput).build();
+//            double result = expression.evaluate();
+//            outputResult.setText(removeTrailingZero(Double.toString(result)));
             String enteredInput = outputResult.getText().toString();
             // call a function that will return the result of the calculate.
-//            String resultObject = mCalculator.getResult(currentDisplayedInput, inputToBeParsed);
-            Expression expression = new ExpressionBuilder(enteredInput).build();
-            double result = expression.evaluate();
-//            outputResult.setText(removeTrailingZero(resultObject));
-            outputResult.setText(removeTrailingZero(Double.toString(result)));
+            String resultObject = mCalculator.getResult(currentDisplayedInput, inputToBeParsed);
+            outputResult.setText(removeTrailingZero(resultObject));
         }else if(data.equals("Ans")){
             String enteredInput = outputResult.getText().toString();
             enteredInput += lastResultObtain;
             outputResult.setText(enteredInput);
         }else if(data.equals("SHIFT")){
-            if(!isInverse){
-                isInverse = true;
-            }else{
-                isInverse = false;
-            }
+            isInverse = !isInverse;
             toggleShiftButton();
         }else if(data.equals("RAD")){
             buttonRad.setText("DEG");
@@ -512,5 +535,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         settings = c.getSharedPreferences(PREFS_NAME, 0);
         float value = settings.getFloat("key", 0);
         return value;
+    }
+
+    @Override
+    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+        switch (position){
+            case 1:
+
+                break;
+            case 2:
+                break;
+            case 3:
+                break;
+            case 4:
+                break;
+            case 5:
+                break;
+
+        }
     }
 }

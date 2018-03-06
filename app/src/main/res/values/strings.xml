@@ -35,7 +35,7 @@
     <string name="seven_button">7</string>
     <string name="eight_button">8</string>
     <string name="nine_button">9</string>
-    <string name="single_delete">del</string>
+    <string name="single_delete">Del</string>
     <string name="clear">AC</string>
     <string name="factorial">n!</string>
     <string name="combination">c(n,r)</string>

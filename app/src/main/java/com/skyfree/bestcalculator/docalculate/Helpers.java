@@ -1,4 +1,4 @@
-package com.skyfree.bestcalculator;
+package com.skyfree.bestcalculator.docalculate;
 
 import android.content.Context;
 import android.os.Bundle;
