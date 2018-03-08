@@ -110,19 +110,19 @@
         <item>mg</item>
     </string-array>
 
-    <string name="option">Option</string>
-    <string name="convert">Convert</string>
-    <string name="invite">Invite friend</string>
-    <string name="rate">Rate us</string>
-    <string name="cancel">Cancel</string>
-    <string name="from">From</string>
-    <string name="to">To</string>
-    <string name="length">Length</string>
-    <string name="acreage">Acreage</string>
-    <string name="volume">Volume</string>
-    <string name="temperature">Temperature</string>
-    <string name="time">Time</string>
-    <string name="speed">Speed</string>
-    <string name="weight">Weight</string>
+    <string name="option">ตัวเลือก</string>
+    <string name="convert">แปลง</string>
+    <string name="invite">เชิญเพื่อน</string>
+    <string name="rate">ให้คะแนนเรา</string>
+    <string name="cancel">ยกเลิก</string>
+    <string name="from">จาก</string>
+    <string name="to">ไปยัง</string>
+    <string name="length">ความยาว</string>
+    <string name="acreage">พื้นที่เพาะปลูก</string>
+    <string name="volume">ปริมาณ</string>
+    <string name="temperature">อุณหภูมิ</string>
+    <string name="time">เวลา</string>
+    <string name="speed">ความเร็ว</string>
+    <string name="weight">น้ำหนัก</string>
 
 </resources>

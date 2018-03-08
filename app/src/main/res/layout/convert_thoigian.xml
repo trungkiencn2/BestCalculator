@@ -3,54 +3,54 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:padding="10dp">
+    android:padding="@dimen/muoi_dp">
 
     <TextView
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="From"
-        android:textSize="30sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <Spinner
-        android:layout_margin="20dp"
-        android:entries="@array/convert_thoigian"
-        android:id="@+id/spinner_top_thoigian"
+        android:layout_marginLeft="@dimen/hai_muoi_dp"
+        android:layout_marginRight="@dimen/hai_muoi_dp"
+        android:text="@string/from"
+        android:textSize="@dimen/ba_muoi_sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <EditText
         android:inputType="phone"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_margin="@dimen/hai_muoi_dp"
         android:id="@+id/edt_top_thoigian"
-        android:textSize="30sp"
+        android:textSize="@dimen/ba_muoi_sp"
         android:background="@null"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
+    <Spinner
+        android:layout_marginLeft="@dimen/hai_muoi_dp"
+        android:layout_marginRight="@dimen/hai_muoi_dp"
+        android:entries="@array/convert_thoigian"
+        android:id="@+id/spinner_top_thoigian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
     <TextView
-        android:layout_marginTop="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:text="To"
-        android:textSize="30sp"
+        android:layout_marginTop="@dimen/hai_muoi_dp"
+        android:layout_marginLeft="@dimen/hai_muoi_dp"
+        android:layout_marginRight="@dimen/hai_muoi_dp"
+        android:text="@string/to"
+        android:textSize="@dimen/ba_muoi_sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_margin="@dimen/hai_muoi_dp"
+        android:id="@+id/tv_bottom_thoigian"
+        android:textSize="@dimen/ba_muoi_sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <Spinner
-        android:layout_margin="20dp"
+        android:layout_marginLeft="@dimen/hai_muoi_dp"
+        android:layout_marginRight="@dimen/hai_muoi_dp"
         android:entries="@array/convert_thoigian"
         android:id="@+id/spinner_bottom_thoigian"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-    <TextView
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:id="@+id/tv_bottom_thoigian"
-        android:textSize="30sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -60,16 +60,16 @@
 
         <Button
             android:id="@+id/btn_convert_thoigian"
-            android:text="Convert"
-            android:layout_margin="20dp"
+            android:text="@string/convert"
+            android:layout_margin="@dimen/hai_muoi_dp"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content" />
 
         <Button
             android:id="@+id/btn_cancel_thoigian"
-            android:text="Cancel"
-            android:layout_margin="20dp"
+            android:text="@string/cancel"
+            android:layout_margin="@dimen/hai_muoi_dp"
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="wrap_content" />

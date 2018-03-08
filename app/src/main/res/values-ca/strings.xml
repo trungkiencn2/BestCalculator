@@ -110,19 +110,19 @@
         <item>mg</item>
     </string-array>
 
-    <string name="option">Option</string>
-    <string name="convert">Convert</string>
-    <string name="invite">Invite friend</string>
-    <string name="rate">Rate us</string>
-    <string name="cancel">Cancel</string>
-    <string name="from">From</string>
-    <string name="to">To</string>
-    <string name="length">Length</string>
+    <string name="option">Opció</string>
+    <string name="convert">Converteix</string>
+    <string name="invite">Convida amic</string>
+    <string name="rate">Puntua ns</string>
+    <string name="cancel">Cancel · lar</string>
+    <string name="from">Des de</string>
+    <string name="to">A</string>
+    <string name="length">Llargada</string>
     <string name="acreage">Acreage</string>
-    <string name="volume">Volume</string>
-    <string name="temperature">Temperature</string>
-    <string name="time">Time</string>
-    <string name="speed">Speed</string>
-    <string name="weight">Weight</string>
+    <string name="volume">volum</string>
+    <string name="temperature">Temperatura</string>
+    <string name="time">Temps</string>
+    <string name="speed">Velocitat</string>
+    <string name="weight">Pes</string>
 
 </resources>

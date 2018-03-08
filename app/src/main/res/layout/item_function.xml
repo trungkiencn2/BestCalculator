@@ -2,22 +2,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="15dp">
+    android:padding="@dimen/muoi_lam_dp">
 
     <ImageView
         android:id="@+id/img_image"
         android:layout_width="0dp"
-        android:layout_height="60dp"
+        android:layout_height="@dimen/sau_muoi_dp"
         android:layout_weight="1"
         android:layout_marginLeft="15dp"/>
 
     <TextView
-        android:textSize="20sp"
+        android:textSize="@dimen/hai_muoi_sp"
         android:id="@+id/tv_function_name"
         android:gravity="center"
         android:layout_weight="3"
         android:layout_width="0dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="15dp"/>
+        android:layout_height="@dimen/sau_muoi_dp"
+        android:layout_marginLeft="@dimen/muoi_lam_dp"/>
 
 </LinearLayout>

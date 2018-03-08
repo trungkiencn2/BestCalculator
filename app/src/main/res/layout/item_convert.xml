@@ -3,21 +3,21 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_gravity="center"
-    android:layout_margin="20dp">
+    android:layout_margin="@dimen/hai_muoi_dp">
 
     <ImageView
         android:layout_gravity="center"
         android:id="@+id/img_avatar_convert"
-        android:layout_width="60dp"
-        android:layout_height="60dp" />
+        android:layout_width="@dimen/sau_muoi_dp"
+        android:layout_height="@dimen/sau_muoi_dp" />
 
     <TextView
         android:layout_gravity="center"
         android:gravity="center"
         android:textColor="@color/colorBlack"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="@dimen/nam_dp"
         android:id="@+id/tv_convert_name"
-        android:textSize="15sp"
+        android:textSize="@dimen/muoi_lam_sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 

@@ -94,10 +94,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void addInfoFunction() {
         mListFunction = new ArrayList<>();
-        mListFunction.add(new FunctionSetting(R.drawable.ic_convert, "Convert"));
-        mListFunction.add(new FunctionSetting(R.drawable.ic_invite, "Invite"));
+        mListFunction.add(new FunctionSetting(R.drawable.ic_convert, getString(R.string.convert)));
+        mListFunction.add(new FunctionSetting(R.drawable.ic_invite, getString(R.string.invite)));
         mListFunction.add(new FunctionSetting(R.drawable.ic_about, "About us"));
-        mListFunction.add(new FunctionSetting(R.drawable.ic_rate, "Rate us"));
+        mListFunction.add(new FunctionSetting(R.drawable.ic_rate, getString(R.string.rate)));
         mAdapter = new AdapterFunction(this, mListFunction);
         mLvFunction.setAdapter(mAdapter);
     }
@@ -658,13 +658,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dialogBuilder.setView(dialogView);
 
         mListConvert = new ArrayList<>();
-        mListConvert.add(new Convert(R.drawable.ic_cv_chieudai, "Length"));
-        mListConvert.add(new Convert(R.drawable.ic_cv_dientich, "Acreage"));
-        mListConvert.add(new Convert(R.drawable.ic_cv_thetich, "Volume"));
-        mListConvert.add(new Convert(R.drawable.ic_cv_nhietdo, "Temperature"));
-        mListConvert.add(new Convert(R.drawable.ic_cv_thoigian, "Time"));
-        mListConvert.add(new Convert(R.drawable.ic_cv_tocdo, "Speed"));
-        mListConvert.add(new Convert(R.drawable.ic_cv_trongluong, "Weight"));
+        mListConvert.add(new Convert(R.drawable.ic_cv_chieudai, getString(R.string.length)));
+        mListConvert.add(new Convert(R.drawable.ic_cv_dientich, getString(R.string.acreage)));
+        mListConvert.add(new Convert(R.drawable.ic_cv_thetich, getString(R.string.volume)));
+        mListConvert.add(new Convert(R.drawable.ic_cv_nhietdo, getString(R.string.temperature)));
+        mListConvert.add(new Convert(R.drawable.ic_cv_thoigian, getString(R.string.time)));
+        mListConvert.add(new Convert(R.drawable.ic_cv_tocdo, getString(R.string.speed)));
+        mListConvert.add(new Convert(R.drawable.ic_cv_trongluong, getString(R.string.weight)));
 
         RecyclerView mRcv = (RecyclerView) dialogView.findViewById(R.id.rcv_convert);
         mRcv.setHasFixedSize(true);
@@ -932,12 +932,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         View dialogView = inflater.inflate(R.layout.convert_thetich, null);
         dialogBuilder.setView(dialogView);
 
-        final Spinner mSpTopTheTich = (Spinner) dialogView.findViewById(R.id.spinner_top_dientich);
-        final Spinner mSpBottomTheTich = (Spinner) dialogView.findViewById(R.id.spinner_bottom_dientich);
-        final EditText mEdtTopTheTich = (EditText) dialogView.findViewById(R.id.edt_top_dientich);
-        final TextView mTvBottomTheTich = (TextView) dialogView.findViewById(R.id.tv_bottom_dientich);
-        Button mBtnConvertTheTich = (Button) dialogView.findViewById(R.id.btn_convert_dientich);
-        Button mBtnCancelTheTich = (Button) dialogView.findViewById(R.id.btn_cancel_dientich);
+        final Spinner mSpTopTheTich = (Spinner) dialogView.findViewById(R.id.spinner_top_thetich);
+        final Spinner mSpBottomTheTich = (Spinner) dialogView.findViewById(R.id.spinner_bottom_thetich);
+        final EditText mEdtTopTheTich = (EditText) dialogView.findViewById(R.id.edt_top_thetich);
+        final TextView mTvBottomTheTich = (TextView) dialogView.findViewById(R.id.tv_bottom_thetich);
+        Button mBtnConvertTheTich = (Button) dialogView.findViewById(R.id.btn_convert_thetich);
+        Button mBtnCancelTheTich = (Button) dialogView.findViewById(R.id.btn_cancel_thetich);
 
         final AlertDialog alertShowConvertTheTich = dialogBuilder.create();
         alertShowConvertTheTich.show();

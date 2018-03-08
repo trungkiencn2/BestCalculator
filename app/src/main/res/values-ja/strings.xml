@@ -110,19 +110,19 @@
         <item>mg</item>
     </string-array>
 
-    <string name="option">Option</string>
-    <string name="convert">Convert</string>
-    <string name="invite">Invite friend</string>
-    <string name="rate">Rate us</string>
-    <string name="cancel">Cancel</string>
-    <string name="from">From</string>
-    <string name="to">To</string>
-    <string name="length">Length</string>
-    <string name="acreage">Acreage</string>
-    <string name="volume">Volume</string>
-    <string name="temperature">Temperature</string>
-    <string name="time">Time</string>
-    <string name="speed">Speed</string>
-    <string name="weight">Weight</string>
+    <string name="option">オプション</string>
+    <string name="convert">変換</string>
+    <string name="invite">友人を招待</string>
+    <string name="rate">私たちを評価してください</string>
+    <string name="cancel">キャンセル</string>
+    <string name="from">から</string>
+    <string name="to">に</string>
+    <string name="length">長さ</string>
+    <string name="acreage">面積</string>
+    <string name="volume">音量</string>
+    <string name="temperature">温度</string>
+    <string name="time">時間</string>
+    <string name="speed">速度</string>
+    <string name="weight">重量</string>
 
 </resources>

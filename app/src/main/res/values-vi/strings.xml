@@ -110,19 +110,19 @@
         <item>mg</item>
     </string-array>
 
-    <string name="option">Option</string>
-    <string name="convert">Convert</string>
-    <string name="invite">Invite friend</string>
-    <string name="rate">Rate us</string>
-    <string name="cancel">Cancel</string>
-    <string name="from">From</string>
-    <string name="to">To</string>
-    <string name="length">Length</string>
-    <string name="acreage">Acreage</string>
-    <string name="volume">Volume</string>
-    <string name="temperature">Temperature</string>
-    <string name="time">Time</string>
-    <string name="speed">Speed</string>
-    <string name="weight">Weight</string>
+    <string name="option">Tùy chọn</string>
+    <string name="convert">Chuyển đổi</string>
+    <string name="invite">Mời bạn bè</string>
+    <string name="rate">Đánh giá chúng tôi</string>
+    <string name="cancel">Hủy</string>
+    <string name="from">Từ</string>
+    <string name="to">Đến</string>
+    <string name="length">Chiều dài</string>
+    <string name="acreage">Diện tích</string>
+    <string name="volume">Thể tích</string>
+    <string name="temperature">Nhiệt độ</string>
+    <string name="time">Thời gian</string>
+    <string name="speed">Tốc độ</string>
+    <string name="weight">Trọng lượng</string>
 
 </resources>
