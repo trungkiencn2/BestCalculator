@@ -1,10 +1,9 @@
-package com.skyfree.bestcalculator.docalculate;
+package com.skyfree.bestcalculator.do_calculate;
 
 import com.fathzer.soft.javaluator.DoubleEvaluator;
 import com.fathzer.soft.javaluator.Function;
 import com.fathzer.soft.javaluator.Parameters;
 
-import java.security.Policy;
 import java.util.ArrayList;
 import java.util.Iterator;
 

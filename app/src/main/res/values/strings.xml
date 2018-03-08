@@ -63,4 +63,51 @@
     <string name="plus_minus">+/-</string>
     <string name="plot">Plot</string>
     <string name="asterisk">*</string>
+
+    <string-array name="convert_m">
+        <item>cm</item>
+        <item>dm</item>
+        <item>m</item>
+        <item>km</item>
+        <item>mile</item>
+    </string-array>
+
+    <string-array name="convert_dientich">
+        <item>m²</item>
+        <item>km²</item>
+        <item>ha</item>
+    </string-array>
+
+    <string-array name="convert_nhietdo">
+        <item>°C</item>
+        <item>°F</item>
+    </string-array>
+
+    <string-array name="convert_thetich">
+        <item>m³</item>
+        <item>lit</item>
+        <item>foot³</item>
+    </string-array>
+
+    <string-array name="convert_thoigian">
+        <item>year</item>
+        <item>day</item>
+        <item>hour</item>
+        <item>minute</item>
+        <item>second</item>
+    </string-array>
+
+    <string-array name="convert_tocdo">
+        <item>m/s</item>
+        <item>km/s</item>
+        <item>km/h</item>
+        <item>mile/h</item>
+    </string-array>
+
+    <string-array name="convert_trongluong">
+        <item>ton</item>
+        <item>kg</item>
+        <item>g</item>
+        <item>mg</item>
+    </string-array>
 </resources>

@@ -5,7 +5,7 @@ android {
     buildToolsVersion "27.0.1"
     defaultConfig {
         applicationId "com.skyfree.bestcalculator"
-        minSdkVersion 16
+        minSdkVersion 15
         targetSdkVersion 22
         versionCode 1
         versionName "1.0"
@@ -40,4 +40,5 @@ dependencies {
     compile 'net.objecthunter:exp4j:0.4.4'
     testCompile 'junit:junit:4.12'
     compile 'com.android.support:design:26.0.0-alpha1'
+    compile 'com.android.support:recyclerview-v7:25.0.0'
 }

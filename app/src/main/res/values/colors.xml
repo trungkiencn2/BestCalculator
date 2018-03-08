@@ -10,4 +10,9 @@
     <color name="icons">#FFFFFF</color>
     <color name="divider">#B6B6B6</color>
     <color name="primary_text">#212121</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLogo">#2aace2</color>
+
+
 </resources>
